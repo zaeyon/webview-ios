@@ -14,6 +14,8 @@
 		FFAB7F852A12069E003C1EDA /* webview_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB7F842A12069E003C1EDA /* webview_iosTests.swift */; };
 		FFAB7F8F2A12069E003C1EDA /* webview_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB7F8E2A12069E003C1EDA /* webview_iosUITests.swift */; };
 		FFAB7F912A12069E003C1EDA /* webview_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB7F902A12069E003C1EDA /* webview_iosUITestsLaunchTests.swift */; };
+		FFAB7FA02A120BB3003C1EDA /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAB7F9F2A120BB3003C1EDA /* WebView.storyboard */; };
+		FFAB7FA22A120BFA003C1EDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB7FA12A120BFA003C1EDA /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		FFAB7F8A2A12069E003C1EDA /* webview-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "webview-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAB7F8E2A12069E003C1EDA /* webview_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webview_iosUITests.swift; sourceTree = "<group>"; };
 		FFAB7F902A12069E003C1EDA /* webview_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webview_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFAB7F9F2A120BB3003C1EDA /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		FFAB7FA12A120BFA003C1EDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFAB7FA32A120D30003C1EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +99,13 @@
 		FFAB7F722A12069E003C1EDA /* webview-ios */ = {
 			isa = PBXGroup;
 			children = (
+				FFAB7FA32A120D30003C1EDA /* Info.plist */,
 				FFAB7F732A12069E003C1EDA /* webview_iosApp.swift */,
 				FFAB7F752A12069E003C1EDA /* ContentView.swift */,
 				FFAB7F772A12069E003C1EDA /* Assets.xcassets */,
 				FFAB7F792A12069E003C1EDA /* Preview Content */,
+				FFAB7F9F2A120BB3003C1EDA /* WebView.storyboard */,
+				FFAB7FA12A120BFA003C1EDA /* ViewController.swift */,
 			);
 			path = "webview-ios";
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFAB7F7B2A12069E003C1EDA /* Preview Assets.xcassets in Resources */,
+				FFAB7FA02A120BB3003C1EDA /* WebView.storyboard in Resources */,
 				FFAB7F782A12069E003C1EDA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAB7FA22A120BFA003C1EDA /* ViewController.swift in Sources */,
 				FFAB7F762A12069E003C1EDA /* ContentView.swift in Sources */,
 				FFAB7F742A12069E003C1EDA /* webview_iosApp.swift in Sources */,
 			);
@@ -420,7 +430,7 @@
 				DEVELOPMENT_TEAM = YX3N4KRU7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "webview-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,7 +459,7 @@
 				DEVELOPMENT_TEAM = YX3N4KRU7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "webview-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
